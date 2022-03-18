@@ -1,0 +1,39 @@
+Source code from: https://www.informit.com/store/understanding-software-dynamics-9780137589739
+
+
+This directory contains files associated with the book Understanding Software 
+Dynamics by Richard L. Sites, ISBN 978-0137589739.
+
+The book-figures directory contains the underlying HTML files for over 100 of
+the diagrams in the book, so you can wander around them to see more context or
+to discover other performance issues.
+
+The book-user-code directory contains all the programs used in the book and the
+script to compile them. They compile and run on both x86 and Rpi4 machines.
+
+The hello_world_trace.html file is an example trace of the hello_world_trace.c 
+program found in book-user-code.
+
+The kutrace_uder_guide.pdf file gives more detial and is more recent than the 
+text in Chapter 19 of the book.
+
+The linux_patches_installation_guide.pdf gives brief directions for building
+the patches.
+
+The loadable-module directory contains the source and Makefile for the companion
+kernel module that implements the bulk of KUtrace. It builds for AMD and Intel 
+x86 machines and for the Raspberry Pi4-B.
+
+The patches-* files contain original source and patched source pairs of files
+for adding KUtrace to three different versions of the Linux operating system.
+These files are structured in the matching directories of the original Linux 
+source download. The patches-linux-5.10.46-rpi4 folder contains additional 
+documentation and useful scripts for building a patched kernel for any of
+these three versions or for incorporating the patches into other versions. Only
+64-bit versions of Linux are supported in this code; 32-bit ports of KUtrace 
+are possible but difficult.
+
+All the code is open sourced under the BSD three-clause license.
+
+
+
